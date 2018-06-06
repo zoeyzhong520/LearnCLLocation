@@ -15,6 +15,8 @@
 		3624417F20C7945400EABB23 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3624417E20C7945400EABB23 /* main.m */; };
 		3624418920C7945400EABB23 /* LearnCLLocationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3624418820C7945400EABB23 /* LearnCLLocationTests.m */; };
 		3624419420C7945400EABB23 /* LearnCLLocationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3624419320C7945400EABB23 /* LearnCLLocationUITests.m */; };
+		36F5E87D20C7B40700ED3BC1 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F5E87C20C7B40700ED3BC1 /* Location.m */; };
+		36F5E88020C7B41100ED3BC1 /* ZZJLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F5E87F20C7B41100ED3BC1 /* ZZJLocation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		3624418F20C7945400EABB23 /* LearnCLLocationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnCLLocationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3624419320C7945400EABB23 /* LearnCLLocationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LearnCLLocationUITests.m; sourceTree = "<group>"; };
 		3624419520C7945400EABB23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36F5E87B20C7B40700ED3BC1 /* Location.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		36F5E87C20C7B40700ED3BC1 /* Location.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		36F5E87E20C7B41100ED3BC1 /* ZZJLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZJLocation.h; sourceTree = "<group>"; };
+		36F5E87F20C7B41100ED3BC1 /* ZZJLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZJLocation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		3624416E20C7945300EABB23 /* LearnCLLocation */ = {
 			isa = PBXGroup;
 			children = (
+				36F5E87A20C7B3FB00ED3BC1 /* ZZJLocation */,
 				3624416F20C7945300EABB23 /* AppDelegate.h */,
 				3624417020C7945300EABB23 /* AppDelegate.m */,
 				3624417220C7945300EABB23 /* ViewController.h */,
@@ -130,6 +137,17 @@
 				3624419520C7945400EABB23 /* Info.plist */,
 			);
 			path = LearnCLLocationUITests;
+			sourceTree = "<group>";
+		};
+		36F5E87A20C7B3FB00ED3BC1 /* ZZJLocation */ = {
+			isa = PBXGroup;
+			children = (
+				36F5E87B20C7B40700ED3BC1 /* Location.h */,
+				36F5E87C20C7B40700ED3BC1 /* Location.m */,
+				36F5E87E20C7B41100ED3BC1 /* ZZJLocation.h */,
+				36F5E87F20C7B41100ED3BC1 /* ZZJLocation.m */,
+			);
+			path = ZZJLocation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +285,8 @@
 			files = (
 				3624417420C7945300EABB23 /* ViewController.m in Sources */,
 				3624417F20C7945400EABB23 /* main.m in Sources */,
+				36F5E87D20C7B40700ED3BC1 /* Location.m in Sources */,
+				36F5E88020C7B41100ED3BC1 /* ZZJLocation.m in Sources */,
 				3624417120C7945300EABB23 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,8 +453,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7KMK843WA4;
 				INFOPLIST_FILE = LearnCLLocation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhifu.zhifu360.LearnCLLocation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhifu.zhifu360;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -447,8 +468,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7KMK843WA4;
 				INFOPLIST_FILE = LearnCLLocation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhifu.zhifu360.LearnCLLocation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhifu.zhifu360;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
